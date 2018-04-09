@@ -1,3 +1,53 @@
+# Sudoku Solver
+
+A little over a year ago, I created a more primitive solution of this problem. (See initial commit)
+
+But my solution had several problems:
+- Only worked for 9x9 Sudokus.
+- Code was not very easy to read through.
+- Code was very very very difficult to debug or alter.
+
+The more I developed it, the more difficult it became to get closer to the solution.
+More and more time was being spent reading what I'd already written, trying to understand it. 
+
+As part of my aim to consider myself a Senior Software Engineer, I've been reading a lot about clean code,
+and practicing what I've been reading about.
+A lot of the advice and learnings can be picked up from the book [Clean Code](https://www.amazon.co.uk/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882). This project represents the culmination of the start of these learnings.
+
+A few of the main principles worth noting throughout this project are:
+- Use of TDD by writing tests first, then writing minimum required code to make test pass
+- Variables and functions should be obviously named, should not need comments anywhere
+- Functions should be short, ideally 10 lines and below
+- Use of typescript to reduce type-based errors
+- Use of ES6 classes to organise code more logically
+
+This all came together very nicely, at approximately an extra 150 lines of code, it provides to following benefits: 
+- The speed of development remained high throughout
+- The code worked first time as soon as it was complete!
+- Provides input validation
+- Works for any valid sudoku grid size and shape
+- More advanced algorithm for solving
+- Fewer iterations required to solve
+- Faster solution time
+- State of progress for unsolvable sudoku, rather than infinite loop
+
+You can solve your own Sudoku my adding the values to the file [SOLVE_SUDOKU.ts](./SOLVE_SUDOKU.ts)
+
+Any questions or comments? Let me know -> [markmccracken91@me.com](markmccracken91@me.com)
+
+My original readme and inspiration below.
+
+<br/>
+<hr/>
+<br/>
+
+
+<br/>
+<hr/>
+<br/>
+
+### original inspiration for the problem
+
 I've recently discovered the joys of [codewars](https://www.codewars.com/dashboard)
 
 I came across the following challenge to be able to solve an easy sudoku
