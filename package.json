@@ -1,0 +1,38 @@
+{
+  "name": "sudoku-solver",
+  "version": "1.0.0",
+  "description": "Sudoku Solver using Node.js & Typescript",
+  "main": "solve-sudoku.js",
+  "scripts": {
+    "prestart": "npm run compile",
+    "start": "node dist/SOLVE_SUDOKU.js",
+    "compile": "tsc",
+    "compile:live-reload": "tsc -w",
+    "test": "jasmine",
+    "test:live-reload": "nodemon --exec jasmine",
+    "test-reporter": "nyc jasmine",
+    "test-reporter:live-reload": "nodemon --exec nyc jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mark-McCracken/Sudoku-Solver.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mark-McCracken/Sudoku-Solver/issues"
+  },
+  "homepage": "https://github.com/Mark-McCracken/Sudoku-Solver#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "jasmine": "^3.1.0",
+    "jasmine-core": "^3.1.0",
+    "typescript": "^2.8.1"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.8.6",
+    "@types/node": "^9.6.2",
+    "nodemon": "^1.17.3",
+    "nyc": "^11.6.0"
+  }
+}
